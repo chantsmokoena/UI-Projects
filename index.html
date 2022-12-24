@@ -1,0 +1,160 @@
+7 <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title> LUX EVENTS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS Styling/css.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Playfair+Display:ital,wght@0,400;0,500;0,800;1,500;1,600;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&display=swap" rel="stylesheet">
+        <script src="https://use.fontawesome.com/b99b31aef9.js"></script>
+
+    </head>
+
+    <body> 
+
+        <section class="Header">
+            <nav>
+                <a href="index.html"><img src ="imagesLux - copy/logo.jpg"></a>   
+                <div class="nav-links" id="navLinks">
+
+
+
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a class="active" href="index.html">HOME</a></li>
+                        <li><a href="about us.html">ABOUT US</a></li><!-- comment -->
+                        <li><a href="our work.html">OUR WORK</a></li>
+                        <li><a href="photo gallery.html">PHOTO GALLERY</a></li><!-- comment -->
+                        <li><a href="get Involved.html">GET INVOLVED</a></li>
+                        <li><a href="contact us.html">CONTACT US</a></li>
+
+                    </ul>
+                </div> 
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav> 
+            <div class="text-box">
+                <h1> Curating Exclusive Events for Priceless Memories</h1>
+                <p>  The Lux Events planning teams focuses on the details
+                    to ensure that every occasion is an unforgettable
+                    experience with remarkable memories.
+                    Planning an event can be so stressful and costly 
+                    especially if decor is involved.
+                    We at Lux Events provide the best and luxurious decor
+                    for our clients at an affordable rate. </p> 
+                <a href="about us.html" class="hero-btn">See More</a>
+            </div>
+        </section>
+        <!-- A bit of welcoming -->
+        <section class="info">
+            <h1> LUX EVENTS </h1><!-- comment -->
+            <p> Lux Events is a full-service event planning company which
+                has committed itself in creating special, different and 
+                memorable events.  </p><!--  Paragraph -->
+            <div class="row">
+                <div class="image-col">
+                    <h3> Stylish</h3><!-- comment -->
+                    <p> Lux Events Provides nothing but stylish events. </p>
+                </div>
+                <div class="image-col">
+                    <h3> Creative </h3><!-- comment -->
+                    <p> At Lux Events We use our creativity to plan events. </p>
+                </div>
+                <div class ="image-col">
+                    <h3> Luxury </h3><!-- comment -->
+                    <p> Not only do we provide stylish events but we make sure they are luxurious </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="events">
+            <h1> Events</h1><!-- comment -->
+            <p> Stylish, Luxurious, Creative</p>
+            <div class="row">
+                <div class="events-col"> 
+                    <img src="imagesLux - Copy/table.jpg"><!-- comment -->
+                    <div class="layer">
+                        <h3> STYLISH</h3>
+                    </div>
+                </div>
+                <div class="events-col"> 
+                    <img src="imagesLux - Copy/decor.jpg"><!-- comment -->
+                    <div class="layer">
+                        <h3> LUXURY</h3>
+                    </div>
+                </div>
+                <div class="events-col"> 
+                    <img src="imagesLux - Copy/image00003.jpeg"><!-- comment -->
+                    <div class="layer">
+                        <h3> CREATIVE</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <script>
+<!-- It will show the right icon when clicked JavaScript for toggle Menu -->
+            var navLinks = document.getElementById("navLinks");
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200";
+            }
+        </script> 
+
+        
+        
+        <section class="Google Form">
+            <div class="the form">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdJszPWd0YMs7hUd15JdUf4umBmOdPkJ14f7ks6w10dLZn5ww/viewform?embedded=true" width="640" height="1379" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+            
+        </section>
+        <!--Starting The Footer-->
+        <section class="footer">
+            <h4>Follow Us</h4><!-- comment -->
+            <div class="icons">
+                <a href="https://www.instagram.com/lux_events_planning/?igshid=YmMyMTA2M2Y%3D" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/luxeventsplanning" target="_blank">
+                    <i class="fa fa-facebook-official"></i>
+                </a>
+                <a href="mailto:Luxeventsplanning1@gmail.com">
+                    <i class="fa fa-envelope"></i>
+                </a>
+            </div>
+            <p><i class="fa fa-copyright"></i> 2022 <i class="fa fa-heart-o"></i> Designed and Developed by ChanTech </p>
+        </section>
+
+
+    </body>
+</html>
+<!--Reference List--References
+2022. How to Embed an Instagram Post on Website (WordPress & HTML). [image] Available at: https://youtu.be/wk-ODKgFavM [Accessed 31 August 2022].
+
+2022. How To Embed Google Maps In HTML Website. [image] Available at: https://youtu.be/inkP0lstoxU [Accessed 31 August 2022].
+
+2022. Web Development Introduction. 1st ed. South Africa: The Independent Institute of Education, pp.2-60.
+
+Easy Tutorials, 2022. How To Make Website Using HTML & CSS | Full Responsive Multi Page Website Design Step by Step. [image] Available at: https://youtu.be/oYRda7UtuhA [Accessed 31 August 2022].
+
+Easy Tutorials, 2022. How To Make Website Using HTML & CSS | Full Responsive Multi Page Website Design Step by Step. [image] Available at: https://youtu.be/oYRda7UtuhA [Accessed 31 August 2022].
+
+W3schools.com. 2022. HTML footer Tag. [online] Available at: https://www.w3schools.com/tags/tag_footer.asp [Accessed 31 August 2022].-->

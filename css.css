@@ -1,0 +1,640 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31 Aug 2022, 12:36:35 PM
+    Author     : lab_services_student
+*/
+*{ margin:0;
+   padding:0;
+   font-family: 'Philospher', sans-serif;
+   
+    /*the header*/
+}
+.Header {
+ min-height: 100vh;
+ width: 100%;
+ background-color: #fae6fa;
+ background-size: cover;
+ position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav img{
+   width: 150px;
+   
+}
+nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: thistle;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+    
+}
+.text-box{
+  width: 90%;
+ color: black;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ text-align: center;
+ 
+}
+.text-box h1{
+    font-size: 62px;
+    font-family: 'Playfair Display', serif;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color:  black;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black ;
+    border: 1px solid #F0A4BB;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    
+    
+}    
+.hero-btn:hover{
+    border: 1px solid #bdb5bb;
+    background: #bdb5bb;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+/*Adding responsive element*/
+@media(max-width: 700px){
+    .text-box h1{
+    font-size: 20px;
+}
+.nav-links ul li{
+    display: block;
+}
+.nav-links{
+    position: fixed;
+    background: #cfabc6;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+}
+nav .fa{
+    display: block;
+    color: black;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.nav-links ul{
+    padding: 30px;
+    
+}
+}
+/*----Info------*/
+.info{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+}
+p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    
+} /*Using columns to place all the text elements and images*/
+.image-col{
+    flex-basis: 31%;
+    background-color: #cfabc6;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+        
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.image-col:hover{
+    box-shadow: 0 0 20px 0px rgba(242,73,163,1);
+}
+@media(max-width: 700px) {
+    .row{
+        flex-direction: column;
+    }
+}
+.events-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.events-col img{
+    width: 100%;
+    display: block;
+    
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    font-family: 'Playfair Display', serif;
+    
+   
+}
+.layer:hover{
+    background: #cfabc6;
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Philosopher', sans-serif;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.footer{
+    text-align: center;
+}
+h4{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+       
+}
+/*Styling the icons*/
+.icons .fa{
+    color: #B095D3;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    transition: 0.5s;
+    text-align: center;
+    
+}
+.icons:hover{
+    color: #bdb5bb;
+    text-align: center;
+}
+.fa-heart-o{
+    color: #B095D3;
+    text-align: center;
+}
+.fa-copyright{
+   color:  #B095D3;
+   text-align: center;
+}
+/*About us page*/
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background: #fae6fa;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: black;
+}
+.sub-header h1{
+    margin-top: 100px;
+    font-family: 'Philosopher', sans-serif;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-lux{
+    flex-basis: 48%;
+    padding: 30px 2px;
+    
+}
+.about-lux img{
+    width: 100%;
+}
+.about-lux h1{
+    padding-top: 0;
+}
+.about-lux p{
+    padding: 15px 0 25px;
+    font-family: 'Philosopher', sans-serif;
+}
+.about-founder{
+   width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+   
+    
+}
+.about-lux-now{
+  flex-basis: 48%;
+    padding: 30px 2px; 
+    
+}
+.about-lux-now img{
+     width: 100%;
+     cursor: pointer;
+     
+}
+.about-lux-now h1{
+     padding-top: 0;
+}
+.about-lux-now p{
+  padding: 15px 0 25px;
+    font-family: 'Philosopher', sans-serif;  
+}
+.about-lux-now img:hover{
+      color: #bdb5bb;
+      transition: .5s;
+}
+.values{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-the-values{
+    flex-basis: 48%;
+    padding: 30px 2px; 
+}
+.about-the-values img{
+    width: 100%;
+}
+.about-the-values h2{
+    padding-top: 0;
+}
+.about-the-values p{
+   padding: 15px 0 25px;
+    font-family: 'Philosopher', sans-serif; 
+}
+.values{
+     width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+}
+p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.rows{
+     margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.image-column{
+     flex-basis: 31%;
+    background-color: #cfabc6;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h2{
+text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.image-column:hover{
+     box-shadow: 0 0 20px 0px rgba(242,73,163,1);
+}
+@media(max-width: 700px) {
+    .rows{
+        flex-direction: column;
+    }
+}
+/*Our Work*/
+.semisub-header{
+ height: 50vh;
+    width: 100%;
+    background: #fae6fa;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: black;
+}
+.semisub-header h1{
+    margin-top: 100px;
+    font-family: 'Philosopher', sans-serif;
+}
+.our-work{
+     width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+}
+p{
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    font-family: 'Philosopher', sans-serif;
+}
+.rows{
+     margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.work-column{
+     flex-basis: 31%;
+    background-color: #FDE9EF;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.work-column:hover{
+     box-shadow: 0 0 20px 0px rgba(242,73,163,1);
+}
+@media(max-width: 700px) {
+    .rows{
+        flex-direction: column;
+    }
+}
+.services{
+     width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+}
+p{
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    font-family: 'Philosopher', sans-serif;
+}
+.rowss{
+     margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.services-col{
+     flex-basis: 31%;
+    background-color: #FDE9EF;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.services-col:hover{
+     box-shadow: 0 0 20px 0px rgba(242,73,163,1);
+}
+
+@media(max-width: 700px) {
+    .rowss{
+        flex-direction: column;
+    }
+}
+.why{
+   padding: 70px;
+   font-family: 'Philosopher', sans-serif;
+   text-align: justify;
+   margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px; 
+}
+h{
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: bold;
+    
+}
+p{
+    font-family: 'Philosopher', sans-serif;
+    font-style: normal;
+ 
+}
+.sub-header-gallery{
+     height: 50vh;
+    width: 100%;
+    background: #fae6fa;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: black;
+}
+.sub-header-gallery h1{
+      margin-top: 100px;
+    font-family: 'Philosopher', sans-serif;
+}
+
+
+/*Contact Us Page*/
+
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fa{
+    font-size: 28px;
+    color: #fae6fa;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col div p{
+    padding: 0;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #fae6fa;
+    font-weight: 400;
+}
+/*Photo Gallery*/
+.gallery{
+    margin: 10px 50px;
+}
+.gallery img{
+    width: 230px;
+    padding: 5px;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+.gallery img:hover{
+  filter: grayscale(0);
+  transform: scale(1.1);  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+  .responsive-image{
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .responsive-image{
+    width: 100%;
+  }
+}
+
+
+
+
+/*Get Involved page---*/
+
+
+.work-with-us{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+p{
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    font-family: 'Philosopher', sans-serif;
+}
+/*form----*/
+.contact-col input, .contact-col textarea{
+width: 100%;
+padding: 15px;
+margin-bottom: 17px;
+outline: none;
+border: 1px solid #CF8DCF;
+box-sizing: border-box;
+}
+
+/*---------------References-----------------
+
+2017. Website layout with image gallery using HTML and CSS. [video] Available at: https://youtu.be/073XKB9xv-M [Accessed 14 October 2022].
+
+2020. Float an Image Without Text Wrapping Using CSS Flex - Align Image Left Without Text Under It. [video] Available at: https://youtu.be/RwYbpRQHZRk> [Accessed 14 October 2022].
+
+2021. How To Make Website Contact Page Using HTML and CSS. [video] Available at: https://youtu.be/Xh1WrXxEWjc [Accessed 14 October 2022].
+
+2022. Easily Add Social Media Icon Links to Your Website with HTML & CSS. [video] Available at: https://youtu.be/Hskt1jN7JTc [Accessed 14 October 2022].
+
+W3schools.com. 2022. CSS Image Gallery. [online] Available at: https://www.w3schools.com/css/css_image_gallery.asp [Accessed 14 October 2022].
+
+W3schools.com. 2022. CSS Tutorial. [online] Available at: https://www.w3schools.com/css/ [Accessed 14 October 2022].
+*/
